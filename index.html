@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>희:솝 팩토리</title>
+  <link href="images/favicon.png" rel="icon" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tab.css">
+  <style>
+    @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,900;1,700&family=Nanum+Myeongjo&display=swap');
+    @font-face {
+    font-family: 'LeferiPoint-BlackA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'LeferiPoint-SpecialItalicA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-SpecialItalicA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'Cafe24Simplehae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="header_inner">
+        <h1><a href="#"><img src="images/LOGO.png" alt="로고"></a></h1>
+        <div class="menu">
+          <ul class="nav">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">FACTORY</a>
+              <!--<ul class="sub">
+                <li><a href="#">나만의 비누 만들기</a></li>
+                <li><a href="#">희:솝 공방 예약</a></li>
+                <li><a href="#">이달의 향기</a></li>
+              </ul>-->
+            </li>
+            
+          </ul><!--nav-->
+        </div><!--menu-->
+        <div class="my">
+          <ul>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+            <li><a href="#">CART</a></li>
+          </ul>
+        </div>
+      </div><!--header_inner-->
+    </div><!--header-->
+    <div class="content">
+      <p class="factory">희:솝 팩토리</p>
+      <div id="tap">
+        <div class="tab">
+          <ul class="tabnav">
+            <li><a href="#tab01">나만의 비누 찾기</a></li>
+            <li><a href="#tab02">희:솝 공방 예약</a></li>
+            <li><a href="#tab03">이달의 향기</a></li>
+          </ul>
+          <div class="tabcontent">
+            <div id="tab01">
+              <img src="images/find_you_one_soap.jpg" alt="베너">
+              <div class="bg">
+                  <div class="step1">
+                  <h2>STEP 1</h2>
+                  <p class="tit">나만의 <span>'향'</span> 찾기</p>
+                  <div class="choose">
+                    <ul>
+                      <li>
+                        <img src="images/perfume_icon_01.png" alt="향기1">
+                        <div class="click"></div><br>
+                        <p class="name">시트러스<br><br><span>Citrus</span></p>
+                      </li>
+                      <li>
+                        <img src="images/perfume_icon_02.png" alt="향기2">
+                        <div class="click"></div><br>
+                        <p class="name">플로럴<br><br><span>Florer</span></p>
+                      </li>
+                      <li>
+                        <img src="images/perfume_icon_03.png" alt="향기3">
+                        <div class="click"></div><br>
+                        <p class="name">머스크<br><br><span>Musk</span></p>
+                      </li>
+                      <li>
+                        <img src="images/perfume_icon_04.png" alt="향기4">
+                        <div class="click"></div><br>
+                        <p class="name">우드<br><br><span>Wood</span></p>
+                      </li>
+                      <li>
+                        <img src="images/perfume_icon_05.png" alt="향기5">
+                        <div class="click"></div><br>
+                        <p class="name">파우더<br><br><span>Powder</span></p>
+                      </li>
+                    </ul>
+                    <button type="submit" name="button" value="button">NEXT</button>
+                  </div><!--choose-->
+                </div> <!--step1-->
+                <div class="step2">
+                  <h2>STEP 2</h2>
+                  <p class="tit">지금 나에게 <span>'필요한 것'</span></p>
+                  <div class="choose">
+                    <ul>
+                      <li>
+                        <img src="images/need_icon_01.png" alt="need1">
+                        <div class="click"></div><br>
+                        <p class="name">수분보습</p>
+                      </li>
+                      <li>
+                        <img src="images/need_icon_02.png" alt="need2">
+                        <div class="click"></div><br>
+                        <p class="name">미백비타민</p>
+                      </li>
+                      <li>
+                        <img src="images/need_icon_03.png" alt="need3">
+                        <div class="click"></div><br>
+                        <p class="name">각질필링</p>
+                      </li>
+                      <li>
+                        <img src="images/need_icon_04.png" alt="need4">
+                        <div class="click"></div><br>
+                        <p class="name">진정윤기</p>
+                      </li>
+                      <li>
+                        <img src="images/need_icon_05.png" alt="need5">
+                        <div class="click"></div><br>
+                        <p class="name">주름영양</p>
+                      </li>
+                    </ul>
+                    <button type="submit" name="button" value="button">NEXT</button>
+                  </div><!--choose-->
+                </div> <!--step2-->
+                <div class="step3">
+                  <h2>STEP 3</h2>
+                  <p class="tit">솝솝이 <span>'색'</span> 찾기</p>
+                  <div class="choose">
+                    <ul>
+                      <li>
+                        <img src="images/color_icon_01.png" alt="색1">
+                        <div class="click"></div><br>
+                        <p class="name">노을진 하늘</p>
+                      </li>
+                      <li>
+                        <img src="images/color_icon_02.png" alt="색2">
+                        <div class="click"></div><br>
+                        <p class="name">붉게 물든 하늘</p>
+                      </li>
+                      <li>
+                        <img src="images/color_icon_03.png" alt="색3">
+                        <div class="click"></div><br>
+                        <p class="name">신비한<br><br> 보라빛 하늘</p>
+                      </li>
+                      <li>
+                        <img src="images/color_icon_04.png" alt="색4">
+                        <div class="click"></div><br>
+                        <p class="name">맑고<br><br> 청명한 하늘</p>
+                      </li>
+                      <li>
+                        <img src="images/color_icon_05.png" alt="색5">
+                        <div class="click"></div><br>
+                        <p class="name">까만 밤 하늘</p>
+                      </li>
+                    </ul>
+                    <button type="submit" name="button" value="button">NEXT</button>
+                  </div><!--choose-->
+                </div> <!--step3-->
+                <div class="step4">
+                  <h2>STEP 4</h2>
+                  <p class="tit">나만의 <span>'모양'</span> 은?</p>
+                  <div class="choose">
+                    <ul>
+                      <li>
+                        <img src="images/shape_icon_01.png" alt="모양1">
+                        <div class="click"></div><br>
+                        <p class="name">모던 심플</p>
+                      </li>
+                      <li>
+                        <img src="images/shape_icon_02.png" alt="모양2">
+                        <div class="click"></div><br>
+                        <p class="name">조각 하트</p>
+                      </li>
+                      <li>
+                        <img src="images/shape_icon_03.png" alt="모양3">
+                        <div class="click"></div><br>
+                        <p class="name">발바닥 젤리</p>
+                      </li>
+                      <li>
+                        <img src="images/shape_icon_04.png" alt="모양4">
+                        <div class="click"></div><br>
+                        <p class="name">살랑 나뭇잎</p>
+                      </li>
+                      <li>
+                        <img src="images/shape_icon_05.png" alt="모양5">
+                        <div class="click"></div><br>
+                        <p class="name">몽글 구름</p>
+                      </li>
+                    </ul>
+                    <button type="submit" name="button" value="button">NEXT</button>
+                  </div><!--choose-->
+                </div> <!--step4-->
+                <div class="step5">
+                  <h2>STEP 5</h2>
+                  <p class="tit">나만의 <span>'Style'</span> 은?</p>
+                  <div class="choose">
+                    <ul>
+                      <li>
+                        <img src="images/style.png" alt="style1">
+                        <div class="click"></div><br>
+                        <p class="name">모던 심플</p>
+                      </li>
+                      <li>
+                        <img src="images/style.png" alt="style1">
+                        <div class="click"></div><br>
+                        <p class="name">조각 하트</p>
+                      </li>
+                      <li>
+                        <img src="images/style.png" alt="style1">
+                        <div class="click"></div><br>
+                        <p class="name">발바닥 젤리</p>
+                      </li>
+                      <li>
+                        <img src="images/style.png" alt="style1">
+                        <div class="click"></div><br>
+                        <p class="name">살랑 나뭇잎</p>
+                      </li>
+                      <li>
+                        <img src="images/style.png" alt="style1">
+                        <div class="click"></div><br>
+                        <p class="name">몽글 구름</p>
+                      </li>
+                    </ul>
+                    <button type="submit" name="button" value="button">NEXT</button>
+                  </div><!--choose-->
+                </div> <!--step4-->
+                <div class="step6">
+                  <div class="step6_in">
+                    <p class="tit"><img src="images/delivery.png" alt="title"></p>
+                    <table>
+                      <caption>배송 정보 입력</caption>
+                      <tr>
+                        <th>이 름</th>
+                        <td colspan="3"><input type="text" class="name"></td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>전화번호</th>
+                        <td><input type="tel"></td>
+                        <td><input type="tel"></td>
+                        <td><input type="tel"></td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>주 소</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="button" value="검색" class="button"></td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td class="t">추가상세</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td colspan="3"><input type="text" class="name"></td>
+                      </tr>
+                    </table>
+                    <button type="submit" name="button" value="button" class="t1_btn">신청하기</button>
+                  </div><!--step6_in-->
+                </div> <!--step6-->
+              </div><!--bg-->
+            </div><!--tab01-->
+            <div id="tab02">
+              <img src="images/hisoap_workshop.jpg" alt="베너">
+              <div class="bg2">
+                <div class="class1">
+                  <p>희:솝 공방 클래스</p>
+                  <img src="images/tit_icon1.png" alt="left">
+                </div><!--class-->
+                <div class="cont1">
+                  <div class="c1_text">
+                    <h4>클래스 소개</h4>
+                    <h5>희:솝 수제비누는 <span class="green">식물성원료</span>로 만들며<br></h5>
+                    <h5><span class="no">NO</span>방부제, <span class="no">NO</span>합성계면활성제, <span class="no">NO</span>플라스틱 실철</h5>
+                    <p>
+                      아이스크림처럼 부드러운 거품력과<br>
+                      깔끔한 세정력을 가지고 있습니다!!
+                    </p>
+                    <p>
+                      가까운 분들께 의미있는 선물을 찾으시거나<br>
+                      나만의 천연제품을 찾는 분들께 추천 드립니다
+                    </p>
+                    <div><button>바로가기</button></div>
+                  </div><!--c1_text-->
+                  <div class="w_img01"><img src="images/cont1_img.png" alt="공방이미지"></div>
+                </div><!--cont1--> 
+                <div class="class2">
+                  <p>희:솝 원데이 클래스</p>
+                  <img src="images/tit_icon2.png" alt="right">
+                </div> <!--class2-->
+                <div class="cont2">
+                  <div class="w_img02"><img src="images/cont2_img.png" alt="공방이미지"></div>
+                  <div class="c2_text">
+                    <h4>클래스 소개</h4>
+                    <h5>평소 <span class="yellow">숙성비누</span>가 좋다는 건 알고 있었지만</h5>
+                    <h5>막상 만들어보기에는 어려움을 느끼셨나요?</h5>
+                    <h5>내 피부에 <span class="blue">수분과 부드러움</span>을 남기고 싶다면<br>
+                      지금 바로 숙성비누에 도전해보세요!!
+                    </h5>
+                    <p>
+                      희:솝 숙성비누 원데이클래스는<br>
+                      나에게 맞는 천연 오일을 사용하여<br>
+                      비누를 제작하는 수업입니다
+                    </p>
+                    <div><button>바로가기</button></div>
+                  </div><!--c2_text-->
+                </div>
+              </div><!--bg2-->
+            </div><!--tab02-->
+            <div id="tab03">
+              <img src="images/scent of the month.jpg" alt="베너">
+              <div class="bg3">
+                <div class="c1">
+                  <div class="mint">
+                    <h3>티트리<br>tea tree</h3>
+                    <img src="images/March.png" alt="3월의 향기" class="march">
+                    <p class="march_t">3월의<br>향기</p>
+                    <p class="mint_p1">티트리오일은<br>
+                      뛰어난 향균 작용과<br> 
+                      피지분비를 조절해주기 때문에<br> 
+                      각종 피부 트러블에도 좋은 효과가 있다.
+                    </p>
+                    <p class="mint_p2">
+                      이런 피부 고민에 추천해요!
+                    </p>
+                    <img src="images/bar_icon.jpg" alt="바">
+                    <p class="mint_p3">
+                      지성/복합성 피부<br>
+                      피지케어가 필요하신 분<br>
+                      산뜻한 사용감을 원하시는 분<br>
+                    </p>
+                  </div><!--mint-->
+                  <div class="light_green">
+                    <p>Add beauty<br> to your daily life</p>
+                    <img src="images/tea tree_icon.png" alt="티트리">
+                  </div><!--light_green-->
+                </div><!--cont1-->
+                <div class="c2">
+                  <div class="c2_tit"><p>이달의 향기 제품</p></div>
+                  <div class="c2_img"><img src="images/tea tree_soap.png" alt="비누"></div>
+                  <div class="green">
+                    <ul>
+                      <li>#모공관리</li>
+                      <li>#피지케어</li>
+                      <li>#촉촉하게</li>
+                      <li>#비건뷰티</li>
+                    </ul>
+                    <div class="moist">
+                      <p>
+                      <span>HISAOP</span>
+                      <br>
+                      <br>
+                      MOIST FOR MEN
+                      </p>
+                    </div><!--moist-->
+                    <div class="ex">
+                      <p>빠른 흡수력과 리프레싱 효과로<br>
+                      피부를 상쾌하고 수분감있게 느끼게 해줍니다
+                      </p>
+                    </div>
+                    <div class="ad">
+                      이달의 향기 상품을 구매 하시는 모든 분께<br><br>
+                      <span>20% 할인</span> 해드려요!
+                    </div>
+                    <div class="c2_btn">
+                      <a href="#">자세히 보기</a>
+                    </div><!--c2_btn-->
+                  </div><!--green-->
+                </div><!--cont2-->
+              </div><!--bg3-->
+            </div><!--tab03-->
+          </div>
+        </div>
+      </div><!--tap-->
+    </div><!--content-->
+    <footer>
+      <div class="footer_top">
+        <div class="sns">
+          <ul>
+            <li><a href="https://www.instagram.com/?hl=ko"><img src="images/sns01.png" alt="인스타"></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/sns02.png" alt="유튜브"></a></li>
+            <li><a href="https://twitter.com/?lang=ko"><img src="images/sns03.png" alt="트위터"></a></li>
+            <li><a href="https://ko-kr.facebook.com/"><img src="images/sns04.png" alt="페이스북"></a></li>
+          </ul>
+        </div><!--sns-->
+      </div><!--footer_top-->
+      <div class="footer_bottom">
+        <div class="company">
+          <h1><img src="images/f_logo.png" alt="로고"></h1>
+          <ul>
+            <li>HISAOP.CL(주)프로젝트0124</li>
+            <li>대표자 : 이동혁 | 개인정보관리책임자 : M.S | 2022(C)</li>
+          </ul>
+        </div>
+      </div><!--footer_bottom-->
+    </footer>
+  </div><!--wrap-->
+
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script><!-- 제이쿼리 라이브러리,수정X -->
+  <script src="script/tab.js"></script>
+  <script src="script/popup.js"></script>
+</body>
+</html>
