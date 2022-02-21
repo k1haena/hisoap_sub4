@@ -5,8 +5,7 @@ a{text-decoration: none; color: #000;}
 /* 탭메뉴 꾸미기 */
 .tab{
   width:1320px; 
-  /* overflow: hidden; */
-  margin: 90px auto;
+  margin: 90px auto 0;
 }
 .tabnav{
   width:1320px; 
@@ -18,19 +17,53 @@ a{text-decoration: none; color: #000;}
 }
 .tabnav li a{ 
   display: block;
-  padding: 20px 0;
+  padding: 30px 0 20px 0;
   text-align: center;
   border-bottom: 1px solid #655b46;
   position: relative;
   z-index: 2;
+  font-size: 23px;
 }
 
 /* 탭메뉴 클릭했을 때 변화 꾸미기 */
 .tabnav li .active{
   border: 1px solid #655b46;
   border-bottom: 1px solid #fff; 
+  position: relative;
 }
-
+.tabnav li:nth-child(1) .active span{
+  display: inline-block;
+  height: 10px;
+  width: 160px;
+  background:#f6c4c0;
+  position: absolute;
+ top: 42px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.tabnav li:nth-child(2) .active span{
+  display: inline-block;
+  height: 10px;
+  width: 150px;
+  background:#ffeda3;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.tabnav li:nth-child(3) .active span{
+  display: inline-block;
+  height: 10px;
+  width: 120px;
+  background:#c9ebc9;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
 /* 탭컨테츠 꾸미기 */
 .tabcontent{
   padding-top: 60px;
@@ -42,14 +75,14 @@ a{text-decoration: none; color: #000;}
   padding-top: 80px;
 }
 #tab01{
-  width: 1320px; height: 1928px;
+  width: 1320px; height: 1615px;
   margin: 0 auto;
   position: relative;
 }
 #tab01 img{display: block;}
 
 #tab01 .bg {
-  width: 1320; height: 1708px;
+  width: 1320px;
   background-color:#fffaf8 ;
   position: relative;
 }
@@ -62,7 +95,7 @@ a{text-decoration: none; color: #000;}
 }
 .tit{
   font-size: 40px; 
-  padding: 100px 0 0 150px;
+  padding: 50px 0 20px 150px;
   font-family: 'LeferiPoint-WhiteObliqueA';
   color: #595959;
 }
@@ -70,11 +103,10 @@ a{text-decoration: none; color: #000;}
   font-family: 'LeferiPoint-SpecialItalicA';
   color: #cb8484;
 }
-#tab01 .bg ul{overflow: hidden; margin-top: 125px;}
 
 .choose{
-  width: 1000px; height: 1250px;
-  margin: 100px auto;
+  width: 1000px; overflow: hidden;
+  margin: 50px auto 0;
 }
 .click{
   display: inline-block;
@@ -85,129 +117,170 @@ a{text-decoration: none; color: #000;}
   margin: 40px 0 20px 0;
 }
 .choose button{
-  margin: 50px auto;
+  margin: auto;
   display: block;
   width: 250px;
   height: 70px;
   border-style: none;
   background-color: #ffa9a2;
   font-size: 30px; color: #fff;
-  padding-top: 0px;
+  margin-bottom:100px;
 }
-
+.step1 .choose ul{
+  width: 1000px; overflow: hidden;
+  padding-bottom: 40px;
+ }
+.step1 .choose ul li img{width: 180px;}
 .step1 .choose ul li{
-  width: 276px; height: 418px;
+  width: 200px; height: 350px;
   float: left;
   text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  margin-right: 100px;
 }
-.step1{
-  background-color: #fffaf8;
-}
-.step1 .choose ul li:nth-child(2){margin: 0 86px;}
-.step1 .choose ul li:nth-child(4){margin: 80px 170px;}
-.step1 .choose ul li:nth-child(5){margin: 80px 0;}
+.step1{width: 1320px;}
+
+.step1 .choose ul li:nth-child(1){margin-left: 100px;}
+.step1 .choose ul li:nth-child(4){margin-left: 250px; margin-top: 40px;}
+.step1 .choose ul li:nth-child(5){margin-top: 60px;}
 .step1 .choose ul li .name{font-size: 30px; color: #595959;} 
 
 .step2{
-  width: 1320px; height: 1928px;
+  width: 1320px;
   background-color: #fffaf8;
   position: absolute;
   top: 0; left: 50%;
   transform: translateX(-50%);
 }
+.step2 .choose ul{
+  width: 1000px; overflow: hidden;
+  padding-bottom: 50px;
+ }
+.step2 .choose ul li img{width: 180px;}
 .step2 .choose ul li{
-  width: 203px; 
+  width: 200px; height: 350px;
   float: left;
   text-align: center;
+  margin-right: 100px;
 }
-.step2 .choose ul li:nth-child(2){margin: 0 195.5px;}
-.step2 .choose ul li:nth-child(4){margin: 100px 200px;}
-.step2 .choose ul li:nth-child(5){margin: 100px 0;}
+.step2 .choose ul li:nth-child(1){margin-left: 100px;}
+.step2 .choose ul li:nth-child(4){margin-left: 250px;  margin-top: 40px;}
+.step2 .choose ul li:nth-child(5){ margin-top: 40px;}
 .step2 .choose ul li .name {font-size: 30px; color: #595959;}
 
-.step3 .choose ul li{
-  width: 203px; 
-  float: left;
-  text-align: center;
-}
 .step3{
-  width: 1320px; height: 1928px;
+  width: 1320px; 
   background-color: #fffaf8;
   position: absolute;
   top: 0; left: 50%;
   transform: translateX(-50%);
 }
-.step3 .choose ul li:nth-child(2){margin: 0 195.5px;}
-.step3 .choose ul li:nth-child(4){margin: 80px 200px;}
-.step3 .choose ul li:nth-child(5){margin: 80px 0;}
+.step3 .choose ul{
+  width: 1000px; overflow: hidden;
+  padding-bottom: 50px;
+ }
+.step3 .choose ul li img{
+  width: 150px; 
+  padding-left: 15px; 
+  box-sizing: border-box;
+}
+.step3 .choose ul li{
+  width: 180px; height: 350px;
+  float: left;
+  text-align: center;
+  margin-right: 100px;
+}
+.step3 .choose ul li:nth-child(1){margin-left: 100px;}
+.step3 .choose ul li:nth-child(4){margin-left: 250px; margin-top: 40px;}
+.step3 .choose ul li:nth-child(5){margin-top: 40px;}
 .step3 .choose ul li .name{font-size: 30px; color: #595959;}
 
-.step4 .choose ul li{
-  width: 203px; 
-  float: left;
-  text-align: center;
-}
+
 .step4{
-  width: 1320px; height: 1928px;
+  width: 1320px;
   background-color: #fffaf8;
   position: absolute;
   top: 0; left: 50%;
   transform: translateX(-50%);
 }
-.step4 .choose ul li:nth-child(2){margin: 0 195.5px;}
-.step4 .choose ul li:nth-child(4){margin: 140px 200px;}
-.step4 .choose ul li:nth-child(5){margin: 140px 0;}
+.step4 .choose ul{
+  width: 1000px; overflow: hidden;
+  padding-bottom: 50px;
+ }
+.step4 .choose ul li img{
+  width: 170px;
+  padding-left: 15px; 
+  box-sizing: border-box;
+}
+.step4 .choose ul li{
+  width: 200px; height: 330px;
+  float: left;
+  text-align: center;
+  margin-right: 100px;
+}
+.step4 .choose ul li:nth-child(1){margin-left: 100px;}
+.step4 .choose ul li:nth-child(4){margin-left: 250px; margin-top: 80px;}
+.step4 .choose ul li:nth-child(5){margin-top: 80px;}
 .step4 .choose ul li .name{font-size: 30px; color: #595959;}
 
-.step5 .choose ul li{
-  width: 203px; 
-  float: left;
-  text-align: center;
-}
+
 .step5{
-  width: 1320px; height: 1928px;
+  width: 1320px; 
   background-color: #fffaf8;
   position: absolute;
   top: 0; left: 50%;
   transform: translateX(-50%);
 }
-.step5 .choose ul li:nth-child(2){margin: 0 195.5px;}
-.step5 .choose ul li:nth-child(4){margin: 140px 200px;}
-.step5 .choose ul li:nth-child(5){margin: 140px 0;}
+.step5 .choose ul{
+  width: 1000px; overflow: hidden;
+  padding-bottom: 70px;
+ }
+.step5 .choose ul li{
+  width: 200px; height: 320px;
+  float: left;
+  text-align: center;
+  margin-right: 100px;
+}
+.step5 .choose ul li img{
+  width: 150px; 
+  padding-left: 50px; 
+  box-sizing: border-box;
+}
+.step5 .choose ul li:nth-child(1){margin-left: 100px;}
+.step5 .choose ul li:nth-child(4){margin-left: 250px; margin-top: 80px;}
+.step5 .choose ul li:nth-child(5){margin-top: 80px;}
 .step5 .choose ul li .name{font-size: 30px; color: #595959;}
 
 .step6{
-  width: 1320px; height: 1928px;
+  width: 1320px;
   position: absolute;
   top: 0; left: 50%;
   transform: translateX(-50%);
-  background:url(../images/delivery_bg.jpg);
+  background-color: #fffaf8;
 }
 .step6_in{
-  width: 1000px;  height: 1400px;
-  margin: 100px auto;
+  width: 1000px; height: 1100px;
+  margin: 50px auto;
   position: relative;
 }
 .step6_in .tit {width: 695px; height: 180px;}
-.step6_in h2{
-  font-size: 42px; 
-  color: #6b6b6b;
-}
+
 table{
   width: 720px;
-  margin: 100px auto;
+  margin: 50px auto;
 }
-table caption{font-size: 40px; padding-bottom: 100px; color: #595959;}
+table caption{font-size: 40px; padding-bottom: 50px; color: #595959;}
 table th{
   width: 200px; height: 50px; 
   font-size: 30px;
   text-align: left;
   color: #6b6b6b;
 }
-table tr td{height: 100px;}
+table tr td{height: 80px;}
 table tr input{height: 40px; border:1px solid #9c9c9c;}
 .name{width: 100%;}
-.button{width: 100px; font-size: 18px; padding-bottom: 2px;}
+.button{width: 100px; font-size: 18px;}
 .t{font-size: 25px; height:30px;}
 .t1_btn{
   position: absolute;
@@ -380,7 +453,8 @@ h4, h5{
 #tab03 .bg3{
   width: 1320px;
   height: 1712px;
-  background: url(../images/paper_bg.jpg) no-repeat;
+  background: url(../images/paper_bg.jpg) no-repeat 0;
+  background-size: cover;
 }
 #tab03 img{display: block;}
 .bg3 .c1{
@@ -394,7 +468,7 @@ h4, h5{
   width: 495px;
   height: 679px;
   position: absolute;
-  top: 140px; right: 0;
+  top: 183px; right: 0;
 }
 
 .c1 .mint h3{
@@ -455,7 +529,7 @@ h4, h5{
   width: 357px;
   height: 471px;
   position: absolute;
-  top: 240px; left: 0;
+  top: 283px; left: 0;
 }
 
 .light_green p{
@@ -477,11 +551,13 @@ h4, h5{
   width: 1230px;
   height: 700px;
   position: relative;
+  margin-top: 45px;
+
 }
 .c2 .c2_tit{
   width: 335px;
   height: 72px;
-  top: 0; left: 0;
+  top: 0px; left: 0;
   padding: 23px 0 0 100px;
   box-sizing: border-box;
 }
@@ -556,21 +632,28 @@ h4, h5{
 .ad span{
   font-weight: bold;
   font-size: 32px;
-  background: linear-gradient(to top, #9cda9283 100%, transparent 50%);
+  color: #fff;
+  background: linear-gradient(to top, #455c57 100%, transparent 50%);
 }
 
 .c2_btn{
-  width: 160px;
-  height: 30px;
+  width: 140px;
+  height: 50px;
   position: absolute;
   top: 450px; left: 350px;
 }
-.c2_btn a{
-  width: 160px;
-  display: block;
-  padding: 3px 100px 0 0px;
-  background: url(../images/c2_icon.png) no-repeat 90px 3px; 
+.c2_btn .ba{
   color: #7a5c1a;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
+}
+.c2_btn .ba img{
+  float: right;
+  transform: translateX(0px);
+}
+.c2_btn:hover .ba img{animation: more 1s infinite;}
+
+@keyframes more{
+  0%{transform: translateX(10px);}
+  100%{transform: translateX(20px);}
 }
