@@ -302,6 +302,7 @@ table tr input{height: 40px; border:1px solid #9c9c9c;}
   width: 1320px; height: 1708px;
   background-color:#fffcf8 ;
   position: relative;
+  overflow: hidden;
 }
 #tab02 img{display: block;}
 
